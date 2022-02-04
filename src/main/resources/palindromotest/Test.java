@@ -41,14 +41,11 @@ public class Test {
                 }
             }
         }
-       
-        if(palabra.length()%2 == 0){
-            if((palabra.length()/2) == cont){
-                return true;
-            }
+
+        if((palabra.length()-cont) == cont || (palabra.length()-cont) == (cont+1)){
+            return true;
         }else{
             return false;
         }
-        return false;
     }
 }
